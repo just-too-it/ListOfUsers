@@ -1,0 +1,42 @@
+@import '~normalize.css';
+@import '@/scss/variables.scss';
+@import '@/scss/visually-hidden.scss';
+
+@import '@/components/Sidebar/Sidebar.scss';
+@import '@/components/Option/Option.scss';
+@import '@/components/OptionList/OptionList.scss';
+@import '@/components/UserList/UserList.scss';
+@import '@/components/UserItem/UserItem.scss';
+@import '@/pages/Users/Users.scss';
+
+html,
+body {
+  height: 100%;
+  width: $desktop-width;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: $font-black;
+
+  & #root {
+    display: flex;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}

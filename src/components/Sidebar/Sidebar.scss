@@ -1,0 +1,17 @@
+.sidebar {
+  width: 152px;
+  height: 100vh;
+  padding-left: 20px;
+  padding-top: 35px;
+  background-color: $background-grey;
+  font-size: 12px;
+  line-height: 14px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10.5px;
+  }
+}
