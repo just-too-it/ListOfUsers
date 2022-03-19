@@ -1,17 +1,23 @@
 .user {
-    width: 420px;
-    height: 73px;
-    background: $background-lightgrey;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    padding: 10px;
+  width: 420px;
+  height: 73px;
+  background: $background-lightgrey;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 
-    &__option {
-        color: $font-grey;
-        margin-right: 7px;
-    }
+  &__options div {
+    margin-bottom: 7px;
+  }
+  
+  &__option {
+    color: $font-grey;
+    margin-right: 7px;
+  }
 
-    & div {
-        margin-bottom: 7px;
-    }
+  &__btn {
+    align-self: end;
+  }
 }

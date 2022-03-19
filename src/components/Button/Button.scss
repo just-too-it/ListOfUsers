@@ -1,0 +1,24 @@
+.button {
+    height: 24.12px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    padding: 5.2px 15.2px;
+    cursor: pointer;
+
+    &_blue {
+        background-color: $background-blue;
+    }
+
+    &_green {
+        background-color: $background-green;
+    }
+
+    &_transparent {
+        background-color: transparent;
+        color: $font-blue;
+        height: auto;
+        padding: 0;
+    }
+}
