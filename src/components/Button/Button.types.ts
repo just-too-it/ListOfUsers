@@ -1,5 +1,7 @@
 export interface IButton {
+    value?: string;
     type: 'button' | 'submit' | 'reset';
     color: 'blue' | 'green' | 'transparent';
-    btnOnClick(): void;
+    label?: string;
+    btnOnClick(event: React.MouseEvent<HTMLElement>): void;
   }

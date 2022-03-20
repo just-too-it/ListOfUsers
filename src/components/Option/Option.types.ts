@@ -1,4 +1,5 @@
 export interface IOption {
-  id: number;
+  value: string;
   label: string;
+  onClick(event: React.MouseEvent<HTMLElement>): void;
 }
