@@ -1,15 +1,12 @@
 import { IOption } from '../../components/Option/Option.types';
-import { handlerBtnOption } from '../utils/handlerBtnOption';
 
 export const options: IOption[] = [
   {
     value: 'city',
-    label: 'по городу',
-    onClick: handlerBtnOption,
+    label: 'по городу'
   },
   {
     value: 'company',
-    label: 'по компании',
-    onClick: handlerBtnOption,
+    label: 'по компании'
   },
 ];
