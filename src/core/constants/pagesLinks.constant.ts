@@ -1,4 +1,4 @@
 export enum PagesLinks {
   USERS_PAGE = '/',
-  USER_PAGE = '/user',
+  PROFILE_PAGE = '/profile',
 }

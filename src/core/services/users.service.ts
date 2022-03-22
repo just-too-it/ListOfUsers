@@ -12,3 +12,16 @@ export const getUsers = async (): Promise<IUserItem[] | undefined> => {
     alert(error);
   }
 };
+
+
+export const getUser = async (id): Promise<IUserItem> => {
+  const url = `https://jsonplaceholder.typicode.com/users/${id}`;
+
+  try {
+    const response = await axios.get(url);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return response.data;
+  } catch (error) {
+    alert(error);
+  }
+};

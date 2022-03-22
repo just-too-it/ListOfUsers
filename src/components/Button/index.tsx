@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { IButton } from './Button.types';
 
 export const Button: FC<{ btn: IButton }> = (props) => {
-  const { color, btnOnClick, value } = props.btn;
+  const { color, btnOnClick, value, disabled } = props.btn;
   let classButton = 'button';
 
   switch (color) {
@@ -21,8 +21,10 @@ export const Button: FC<{ btn: IButton }> = (props) => {
   }
 
   return (
-    <button className={classButton} type={props.btn.type} value={value} onClick={btnOnClick}>
+    <button className={classButton} type={props.btn.type} value={value} onClick={btnOnClick} disabled = {disabled}>
       {props.children}
     </button>
   );
 };
+
+

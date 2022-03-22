@@ -1,0 +1,19 @@
+.profile {
+    padding: 13px 36px;
+
+    
+    &__header {
+        width: 438px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
