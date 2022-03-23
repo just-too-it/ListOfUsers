@@ -3,5 +3,5 @@ export interface IButton {
   type: 'button' | 'submit' | 'reset';
   color: 'blue' | 'green' | 'transparent';
   disabled?: boolean;
-  btnOnClick(event: React.MouseEvent<HTMLElement>): void;
+  btnOnClick(event: React.MouseEvent<HTMLElement> | React.FormEvent<HTMLFormElement>): void;
 }
